@@ -1,9 +1,9 @@
-const checkTriangle = (a, b, c) => {
-  if (a + b > c && b + c > a && c + a > b) {
-    console.log("its triangle");
+const checkTriangle = () => {
+  if (a === b && b === c && c === a) {
+    console.log("eqvilateral");
+  } else if (a !== b && b !== c && c !== a) {
+    console.log("scalene");
   } else {
-    console.log("not a triangle");
+    console.log("isoscaline");
   }
 };
-
-checkTriangle(10, 8, 1);
